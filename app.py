@@ -3,7 +3,7 @@ from game import Game
 
 if __name__ == "__main__":
     game = Game()
-    #game.start()
+    game.start()
     while True:
         question = input("Would you like to play again?(Y/N)\n>  ")
         if question.lower() == "y":
