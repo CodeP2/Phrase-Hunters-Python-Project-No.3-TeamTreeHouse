@@ -23,6 +23,9 @@ class Game:
         print("Welcome to the Phrase Hunting Game!")
     
     def set_difficulty(self):
+        """
+        I have added difficulty to make the game easier/harder by setting life attribute
+        """
         difficulty = "\nchoose a difficulty:\n1)Easy\n2)Medium\n3)Hard\n"
         choice = "\nWhat difficulty would you like?(choices: 1, 2 or 3)\n>  "
         option = input(f"{difficulty}{choice}")
@@ -44,6 +47,10 @@ class Game:
         self.active_phrase = random_phrase.lower()
 
     def get_guess(self):
+        """
+        checks the input if it's int guess_letter.isdigit() 
+        or punctuation signsany(char in string.punctuation for char in guess_letter)
+        """
         guess_letter = input("\nWhat is your guess?\n>  ")
         try:
             if any(char in string.punctuation for char in guess_letter)\

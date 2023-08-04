@@ -10,6 +10,9 @@ class Phrase:
         print(self.output_phrase)
 
     def check_letter(self, guesses):
+        """
+        "draws" the "map" for letters and spaces for phrase choosen
+        """
         for letter in self.phrase:
             if " " in letter:
                 self.output_phrase += " "
