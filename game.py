@@ -73,6 +73,9 @@ class Game:
             pass
 
     def game_over(self, obj, life):
+        """
+        obj here is used as instance and get have_guessed from phrase file
+        """
         if obj.have_guessed:
             print("Congratulations you have Won!\nThank you for playing!")
             return True
