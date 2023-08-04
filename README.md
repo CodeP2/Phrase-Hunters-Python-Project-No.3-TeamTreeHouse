@@ -7,6 +7,7 @@ I have been practising a lot before taking this project so I wasn't using google
 (and making my own versions of this project the only difference is that I did it in one file instead)
 
 altho I have to explain this line:
+
 if any(char in string.punctuation for char in guess_letter)\
                 or len(guess_letter) > 1:
 
