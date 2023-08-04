@@ -10,6 +10,7 @@ altho I have to explain this line:
 
 if any(char in string.punctuation for char in guess_letter)\
                 or len(guess_letter) > 1:
+
 https://docs.python.org/3/library/functions.html?highlight=any#any
 https://docs.python.org/3/library/string.html?highlight=string%20punctuatio#string.punctuation
 
@@ -18,6 +19,7 @@ it returns True and raises Value Error (len part of course check for the length)
 
 elif guess_letter.isdigit():
                 raise TypeError("Error")
+
 https://docs.python.org/3/library/stdtypes.html?highlight=isdigit
 
 this line check if the passed guess is an int, float and so on basically it checks if passed "letter" is a number or not if it is it returns Type Error
